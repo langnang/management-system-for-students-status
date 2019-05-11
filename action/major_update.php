@@ -8,10 +8,12 @@
 
 include '../sql/sqlHelper.php';
 
+$id=$_POST["id"];
+$major=$_POST["major"];
 
-$mark=$_POST["mark"];
-$state=$_POST["state"];
-$mark_old=$_POST["mark_old"];
-$state_old=$_POST["state_old"];
+$id_old=$_POST["id_old"];
+$major_old=$_POST["major_old"];
 
-echo updateRegisterMark($mark,$state,$mark_old,$state_old);
+$college=$_POST["college"];
+
+echo updateMajor($id, $major, $id_old, $major_old,$college);

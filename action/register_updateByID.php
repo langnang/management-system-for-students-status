@@ -9,9 +9,6 @@
 include '../sql/sqlHelper.php';
 
 
-$mark=$_POST["mark"];
-$state=$_POST["state"];
-$mark_old=$_POST["mark_old"];
-$state_old=$_POST["state_old"];
+$id=$_POST["id"];
 
-echo updateRegisterMark($mark,$state,$mark_old,$state_old);
+echo updateRegisterByID($id);

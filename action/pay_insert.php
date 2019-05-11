@@ -9,9 +9,7 @@
 include '../sql/sqlHelper.php';
 
 
-$mark=$_POST["mark"];
-$state=$_POST["state"];
-$mark_old=$_POST["mark_old"];
-$state_old=$_POST["state_old"];
+$id=$_POST["学号"];
+$pay=$_POST["缴费情况"];
 
-echo updateRegisterMark($mark,$state,$mark_old,$state_old);
+echo insertPay($id,$pay);

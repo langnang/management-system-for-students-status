@@ -8,10 +8,10 @@
 
 include "../sql/sqlHelper.php";
 
-$id=$_POST["id"];
-$password_old=$_POST["password_old"];
-$password=$_POST["password_new"];
 
+$id=$_POST["课程号"];
+$course=$_POST["课程名"];
+$hours=$_POST["学时"];
+$credits=$_POST["学分"];
 
-//echo $id.$password.$password_old;
-echo updateUser($password,$id,$password_old);
+echo insertCourse($id, $course, $hours, $credits);

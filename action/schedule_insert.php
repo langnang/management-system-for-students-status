@@ -8,8 +8,8 @@
 
 include '../sql/sqlHelper.php';
 
-$id_student = $_POST["id_student"];
-$mark = $_POST["mark"];
-$id_course = $_POST["id_course"];
+$id_student = $_POST["学号"];
+$mark = $_POST["学期标志"];
+$id_course = $_POST["课程号"];
 
 echo insertSchedule($id_student, $mark, $id_course);

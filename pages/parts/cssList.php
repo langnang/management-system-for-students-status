@@ -22,11 +22,7 @@
 
 
 <link href="../assets/css/minimal.css" rel="stylesheet">
-<?php 
-header("Pragma: no-cache"); 
-session_start();
-echo "<script> var id=".$_SESSION["ID"].";var mark= new String();mark=".$_SESSION["mark"].";</script>";
-?>
+<?php header("Pragma: no-cache"); ?>
 <style>
     .pagination>li>a{
         padding: 3px 6px;

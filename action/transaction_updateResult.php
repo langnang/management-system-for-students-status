@@ -6,12 +6,10 @@
  * and open the template in the editor.
  */
 
+
 include "../sql/sqlHelper.php";
 
 $id=$_POST["id"];
-$password_old=$_POST["password_old"];
-$password=$_POST["password_new"];
+$result=$_POST["result"];
 
-
-//echo $id.$password.$password_old;
-echo updateUser($password,$id,$password_old);
+echo updateTransactionResult($result,$id);

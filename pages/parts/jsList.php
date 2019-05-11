@@ -53,6 +53,43 @@
 <script src="../lib/Vue.js-2.5.16/vue.min.js"></script>
 <script>
     $(function () {
+        var set_vue = new Vue({
+            el: "#general-settings",
+            data: {
+                set: []
+
+            },
+            mounted: function () {
+                this.$nextTick(function () {
+//                    console.log("set");
+                    $.ajax({
+                        url: "../action/setup_select.php",
+                        async: "true",
+                        dataType: "json",
+                        success: function (msg) {
+                            set_vue.set = msg;
+//                            console.log("set-mounted");
+                        }
+                    });
+                });
+            },
+            updated: function () {
+                this.$nextTick(function () {
+                    for (var i = 0; i <= this.set.length - 1; i++) {
+                        if (this.set[i].state === "运行") {
+                            $("#general-settings").find("input").eq(i).attr("checked", "");
+                        }
+                    }
+//                    console.log("set-updated");
+                });
+            }
+
+        });
+
+
+
+
+
     });
 
 </script>

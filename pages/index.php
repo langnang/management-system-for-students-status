@@ -9,7 +9,7 @@
   include "parts/cssList.php";
   ?>
 </head>
-<body class="bg-2">
+<body class="bg-3">
 
 
 

@@ -8,10 +8,7 @@
 
 include '../sql/sqlHelper.php';
 
+$name=$_POST["name"];
+$password=$_POST["password"];
 
-$mark=$_POST["mark"];
-$state=$_POST["state"];
-$mark_old=$_POST["mark_old"];
-$state_old=$_POST["state_old"];
-
-echo updateRegisterMark($mark,$state,$mark_old,$state_old);
+echo adminSignIn($name, $password);

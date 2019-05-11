@@ -7,16 +7,15 @@
  */
 
 /**
- * Description of registerClass
+ * Description of transactionClass
  *
  * @author Administrator
  */
-class registerClass {
+class transactionClass {
     //put your code here
     public $id;
-    public $mark;
-    public $state;
+    public $id_student;
+    public $type;
     public $reason;
     public $result;
-    public $time;
 }

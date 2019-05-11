@@ -1,6 +1,6 @@
 <?php
 
-/* 
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -9,9 +9,10 @@
 include '../sql/sqlHelper.php';
 
 
-$mark=$_POST["mark"];
-$state=$_POST["state"];
-$mark_old=$_POST["mark_old"];
-$state_old=$_POST["state_old"];
+$id = $_POST["课程号"];
+$course = $_POST["课程名"];
+$mark = $_POST["学期标志"];
+$hours = $_POST["学时"];
+$credits = $_POST["学分"];
 
-echo updateRegisterMark($mark,$state,$mark_old,$state_old);
+echo insertElective($id, $course, $mark, $hours, $credits);

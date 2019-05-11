@@ -8,10 +8,11 @@
 
 include '../sql/sqlHelper.php';
 
-
-$mark=$_POST["mark"];
+$name=$_POST["name"];
 $state=$_POST["state"];
-$mark_old=$_POST["mark_old"];
-$state_old=$_POST["state_old"];
+$mark=$_POST["mark"];
+$start=$_POST["startTime"];
+$end=$_POST["endTime"];
 
-echo updateRegisterMark($mark,$state,$mark_old,$state_old);
+echo updateSetUpByName($state,$mark,$start,$end,$name);
+
